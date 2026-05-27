@@ -156,7 +156,7 @@ ul { list-style:none; }
 .nav-menu a:hover,
 .nav-menu .active > a {
   color:#fff;
-  background:rgba(99,102,241,.12);
+  background:var(--accent-d);
 }
 .nav-menu .active > a { color:var(--accent-l); }
 .nav-menu a::before {
@@ -579,9 +579,17 @@ ul { list-style:none; }
   display:flex; align-items:center; justify-content:center;
   font-weight:800; font-size:14px; flex-shrink:0;
 }
-.edu-logo    { background:rgba(99,102,241,.15); color:var(--accent-l); font-size:20px; }
+.edu-logo      { background:rgba(99,102,241,.15); color:var(--accent-l); font-size:20px; }
 .deloitte-logo { background:linear-gradient(135deg,#006400,#228B22); color:#fff; font-family:'Playfair Display',serif; font-size:20px; }
-.alt-logo    { background:linear-gradient(135deg,#1e40af,#3b82f6); color:#fff; font-size:12px; letter-spacing:.02em; }
+.alt-logo      { background:linear-gradient(135deg,#1e40af,#3b82f6); color:#fff; font-size:12px; letter-spacing:.02em; }
+.he-logo       { background:linear-gradient(135deg,#0369a1,#0ea5e9); color:#fff; font-size:11px; font-weight:800; letter-spacing:.03em; }
+
+.role-title-line {
+  font-size:12px; font-weight:600;
+  color:var(--accent-l);
+  margin-bottom:10px; margin-top:0;
+  letter-spacing:.02em;
+}
 
 .rcard h4 { font-size:15px; font-weight:700; color:var(--text-1); margin-bottom:4px; }
 .rcard h4 a { color:var(--text-1); }
@@ -623,6 +631,17 @@ ul { list-style:none; }
 }
 .rbullets li:last-child { margin-bottom:0; }
 .rbullets li::marker { color:var(--accent); }
+
+.vihaan-badge {
+  display:inline-flex; align-items:center;
+  font-size:10px; font-weight:700;
+  letter-spacing:.06em; text-transform:uppercase;
+  color:var(--gold-l);
+  background:rgba(245,158,11,.12);
+  border:1px solid rgba(245,158,11,.25);
+  padding:2px 8px; border-radius:var(--r-full);
+  vertical-align:middle; margin-left:4px;
+}
 
 /* Timeline */
 .timeline { position:relative; }
